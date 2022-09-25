@@ -1,0 +1,6 @@
+C:\Users\usuario\apiDotnetOne\obj\Debug\netcoreapp3.1\api-dotnet-one.csproj.AssemblyReference.cache
+C:\Users\usuario\apiDotnetOne\obj\Debug\netcoreapp3.1\api-dotnet-one.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\apiDotnetOne\obj\Debug\netcoreapp3.1\api-dotnet-one.AssemblyInfoInputs.cache
+C:\Users\usuario\apiDotnetOne\obj\Debug\netcoreapp3.1\api-dotnet-one.AssemblyInfo.cs
+C:\Users\usuario\apiDotnetOne\obj\Debug\netcoreapp3.1\api-dotnet-one.csproj.CoreCompileInputs.cache
+C:\Users\usuario\apiDotnetOne\obj\Debug\netcoreapp3.1\api-dotnet-one.MvcApplicationPartsAssemblyInfo.cache

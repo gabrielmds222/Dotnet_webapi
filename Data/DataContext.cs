@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using testeef.Models;
+using apiDotnetOne.Models;
 
-namespace testeef.Data{
+namespace apiDotnetOne.Data{
     public class DataContext : DbContext
     {
         public DataContext(DbContextOptions<DataContext> options)
