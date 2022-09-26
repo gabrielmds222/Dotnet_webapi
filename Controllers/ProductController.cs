@@ -9,7 +9,7 @@ using System.Linq;
 namespace apiDotnetOne.Controllers
 {
     [ApiController]
-    [Route("v1/categories")]
+    [Route("v1/products")]
     public class ProductController : ControllerBase
     {
         [HttpGet]
@@ -29,7 +29,7 @@ namespace apiDotnetOne.Controllers
             return product;
         }
 
-                [HttpGet]
+        [HttpGet]
         [Route("categories/{id:int}")]
         public async Task<ActionResult<List<Product>>> GetByCategory([FromServices] DataContext context, int id)
         {
@@ -38,6 +38,22 @@ namespace apiDotnetOne.Controllers
             .AsNoTracking()
             .Where(x => x.CategoryId == id).ToListAsync();
             return products;
+        }
+
+        [HttpPost]
+        [Route("")]
+        public async Task<ActionResult<Product>> Post([FromServices] DataContext context, [FromBody]Product model)
+        {
+            if (ModelState.IsValid)
+            {
+                context.Products.Add(model);
+                await context.SaveChangesAsync();
+                return model;
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
         }
     }
 
